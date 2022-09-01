@@ -37,6 +37,12 @@ This main branch should have some branch protection rules on it to protect it an
 In addition to protecting the branches you should also set up a pull request message that is displayed whenever someone attempts to open up a pull request. This message should be place in `/docs/pull_request_template.md` and an example message can be found in this repository at that path.
 [more info](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
 
+<!---
+## Issues
+add information on setting up issues to prevent dump people from opening issues without information
+[more info](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
+--->
+
 ## Automatic building
 
 Every repository should set up automatic builds for testing pull requests and publishing release candidates. Some example workflows can be found in this project but may need to be modified depending on the target version of the game.   
