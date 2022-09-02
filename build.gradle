@@ -2,9 +2,6 @@ plugins {
     id 'org.ajoberstar.grgit' version '4.1.0'
 }
 
-archivesBaseName = "${project.mod_id}-${project.minecraft_version}"
-version = "${getVersionMetadata()}"
-
 def getVersionMetadata() {
     // CI builds version numbers
     def build_id = System.getenv("RELEASE_TAG")
@@ -25,6 +22,9 @@ def getVersionMetadata() {
 
     return "rev.${id}"
 }
+
+archivesBaseName = "${project.mod_id}-${project.minecraft_version}"
+version = "${getVersionMetadata()}"
 
 processResources {
     inputs.property "mod_id", project.mod_id
