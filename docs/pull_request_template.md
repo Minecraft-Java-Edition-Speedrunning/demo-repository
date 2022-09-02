@@ -4,4 +4,4 @@
 - Call out any interesting implementation details describing _why_ you made specific decisions
 
 Checklist
-- [ ] Build compiles and is ready to be automatically be release to the public
+- [ ] Build compiles and is ready to be automatically be released to the public
