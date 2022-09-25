@@ -8,7 +8,7 @@ This repository is here to server as a guide project on how to setup a repositor
 The naming of repository is to serve as a method of differentiating mods by both mod identify and supported versions of the game.
 Mod repositories names should match the following regex.
 
-`/mcsr-(?<mod_id>\w*)-(?<min_version>\d+\.\d+(?:\.\d+)?)(:?-(?<max_version>\d+\.\d+(?:\.\d+)?))?/`
+`/mcsr-(?<mod_id>[\w-]*)-(?<min_version>\d+\.\d+(?:\.\d+)?)(:?-(?<max_version>\d+\.\d+(?:\.\d+)?))?/`
 
 **examples:**
 * `mcsr-sodium-1.16.1`
@@ -18,7 +18,7 @@ Parts of the regex:
 
 `mcsr-` - all mod repositories should be prefixed with `"mcsr-"` this denotes that the repository is a mod and not some other project (for example this repository)
 
-`(?<mod_id>\w*)` - the second part of the string is a unique identifier for the mod. This identifier should be consistent across all version splits for the same mod.
+`(?<mod_id>[\w-]*)` - the second part of the string is a unique identifier for the mod. This identifier should be consistent across all version splits for the same mod.
 
 `(?<min_version>\d+\.\d+(?:\.\d+)?)` - the third part of the string is the minimum (or only) version of minecraft that this repository supports.
 
