@@ -15,7 +15,7 @@ on:
 env:
   RELEASE_TITLE: "**TITLE HERE** build ${{github.run_number}}"
   RELEASE_NUMBER: "${{github.run_number}}"
-  RELEASE_FILE: "build/libs/*-v${{github.run_number}}.jar"
+  RELEASE_FILE: "build/libs/*-${{github.run_number}}.0.0.jar"
 
 jobs:
   publish:
