@@ -14,7 +14,7 @@ on:
 
 env:
   RELEASE_TITLE: "**TITLE HERE** build ${{github.run_number}}"
-  RELEASE_TAG: "v${{github.run_number}}"
+  RELEASE_NUMBER: "${{github.run_number}}"
   RELEASE_FILE: "build/libs/*-v${{github.run_number}}.jar"
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
       - name: Publish tagged version
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          automatic_release_tag: "${{ env.RELEASE_TAG }}"
+          automatic_release_tag: "v${{ env.RELEASE_NUMBER }}"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           title: ${{ env.RELEASE_TITLE }}
